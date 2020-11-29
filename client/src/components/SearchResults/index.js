@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
 
-function Header() {
+function SearchResults() {
   return (
     <div class="jumbotron jumbotron-fluid header-color">
     <div class="container ">
-        <h1 class="display-4">Google Book Search</h1>
-        <p class="lead">Search for and Save Books of Interest!</p>
+        <h1 class="display-4">Search Results</h1>
+        <p class="lead"></p>
     </div>
     </div>
   );
 }
 
-export default Header;
+export default SearchResults;
