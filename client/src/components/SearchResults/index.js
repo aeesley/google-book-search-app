@@ -3,7 +3,7 @@ import "./style.css";
 
 function SearchResults() {
   return (
-    <div class="jumbotron jumbotron-fluid header-color">
+    <div class="jumbotron jumbotron-fluid">
     <div class="container ">
         <h3 class="">Search Results</h3>
         <p class="lead"></p>

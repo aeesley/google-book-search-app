@@ -1,3 +1,12 @@
 .header-color{
-    background-color: blue;
+    background-color: black;
+    color: white
+}
+
+.header-font{
+    color: white;
+}
+
+.header-body-font{
+    color: white;
 }
