@@ -8,10 +8,7 @@ function SearchResult(props) {
   const handleClick = (e) => {
     e.preventDefault()
 
-    console.log("we got clicked");
-
     API.saveBook(props.book).then((data) => {
-        console.log('data ??? from api ??' , data)
     })
 
   }

@@ -31,7 +31,7 @@ Create a React-based Google Books Search app with React components, work with he
 HTML, CSS, Javascript, React, Node, Express, MongoDB
 
 ## Sources
-Class activities, tutor session + referenced API calls on this Github repo: https://github.com/Victoire44/Google-Books-Search
+Class activities, tutor session.
 
 ## Additional Questions
 If you have any questions about the project, please reach out through GitHub.

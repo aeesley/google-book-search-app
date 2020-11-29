@@ -16,10 +16,11 @@ const mongoose = require('mongoose')
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/googleboks"
+    "mongodb://localhost/googlebooks"
 );
 const bookModel = require('./models/book')
 
+// FIX FROM ONLINE FOR CORS ERRORS
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
@@ -46,16 +47,16 @@ if (process.env.NODE_ENV === 'production') {
 };
 
 // API and View Routes
-//app.use(routes);
 
 app.post("/savedbooks", function(req,res){
-    console.log("we hit the route", req.body);
 
-    var newBookTosave = {
-        title: req.body.volumeInfo.title
+    var newBookToSave = {
+        title: req.body.volumeInfo.title,
+        authors: req.body.volumeInfo.authors,
+        description: req.body.searchInfo.textSnippet
     }
 
-    bookModel.create(newBookTosave).then(function(data) {
+    bookModel.create(newBookToSave).then(function(data) {
         console.log('new dude we saved!!', data)
     })
 

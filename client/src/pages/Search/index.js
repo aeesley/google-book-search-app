@@ -14,40 +14,31 @@ function Search(props) {
     // Helper function to capture the users typing
     const handleTyping = (e) => {
 
-        console.log("we are typing", e.target.value);
         setState({...state, search:  e.target.value})
     }
     // Helper function to search the user input with the API and save the book results to the books aray in state
     const handleClick = (e) => {
         e.preventDefault()
 
-        console.log("we got clicked", state.search);
-
         API.getBook(state.search).then((data) => {
-            console.log('data ??? from api ??' , data)
+
             setState({...state, books: data.data.items})
         })
 
     }
 
-
-    console.log('this is our state!!', state)
-
     // Map over every book that came up in the search results from the API
     state.books.map((singleBook) => {
-        console.log("looooping", singleBook);
     })
 
- 
   return (
     <div className="card">
     <Header />
-    {/* <div class="jumbotron jumbotron-fluid"> */}
-    <div class="container">
-  <h3 class="">Book Search</h3>
-        <p class="lead">Enter a book title to search!</p>
+    <div className="container">
+  <h3 className="">Book Search</h3>
+        <p className="lead">Enter a book title to search!</p>
         <form 
-            class="example" action="action_page.php">
+            className="example" action="action_page.php">
             <input 
                 type="text" 
                 placeholder="Search.." 
@@ -57,27 +48,21 @@ function Search(props) {
                 </input>
             <button onClick={handleClick} type="submit">Search</button>
         </form>
-    {/* </div> */}
     </div>
 
-
- 
-    {/* <div class="jumbotron jumbotron-fluid"> */}
-    <div class="container ">
+    <div className="container ">
         <br></br>
         <br></br>
-        <h3 class="">Search Results</h3>
-        <p class="lead"></p>
+        <h3 className="">Search Results</h3>
+        <p className="lead"></p>
 
         {state.books.map((singleBook) => {
-        console.log("looooping", singleBook);
             return (
                 <SearchResult book={singleBook} title={singleBook.volumeInfo.title} author={singleBook.volumeInfo.authors} description={singleBook.searchInfo.textSnippet} />
             )
         })}
 
     </div>
-    {/* </div> */}
     <br></br>
     <br></br>
   </div>

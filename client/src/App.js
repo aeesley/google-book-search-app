@@ -9,7 +9,6 @@ import Wrapper from "./components/Wrapper/index.js";
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
-//  const [state, setState] = useState({})
 
   document.title = "Google Book Search";
   return (
