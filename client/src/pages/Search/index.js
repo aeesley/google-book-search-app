@@ -42,7 +42,7 @@ function Search(props) {
   return (
     <div className="card">
     <Header />
-    <div class="jumbotron jumbotron-fluid">
+    {/* <div class="jumbotron jumbotron-fluid"> */}
     <div class="container">
   <h3 class="">Book Search</h3>
         <p class="lead">Enter a book title to search!</p>
@@ -57,13 +57,15 @@ function Search(props) {
                 </input>
             <button onClick={handleClick} type="submit">Search</button>
         </form>
-    </div>
+    {/* </div> */}
     </div>
 
 
  
-    <div class="jumbotron jumbotron-fluid">
+    {/* <div class="jumbotron jumbotron-fluid"> */}
     <div class="container ">
+        <br></br>
+        <br></br>
         <h3 class="">Search Results</h3>
         <p class="lead"></p>
 
@@ -75,7 +77,9 @@ function Search(props) {
         })}
 
     </div>
-    </div>
+    {/* </div> */}
+    <br></br>
+    <br></br>
   </div>
   );
 }
