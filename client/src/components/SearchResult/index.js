@@ -17,10 +17,10 @@ function SearchResult(props) {
   }
 
   return (  
-    <div class="container">
-        <h3 class="">{props.title}</h3>
-        <p class="lead"></p>
-        <p class="lead"></p>
+    <div className="container">
+        <h3 className="">{props.title}</h3>
+        <p className="lead"></p>
+        <p className="lead"></p>
         <button onClick={handleClick}>Save</button>
     </div>
     

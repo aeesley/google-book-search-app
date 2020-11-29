@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./style.css";
 import Header from "../../components/Header/index.js";
-import SearchBar from "../../components/SearchBar/index.js";
 import SearchResult from "../../components/SearchResult/index.js";
 import API from "../../utils/API.js"
 
