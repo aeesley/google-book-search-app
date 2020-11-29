@@ -70,7 +70,7 @@ function Search(props) {
         {state.books.map((singleBook) => {
         console.log("looooping", singleBook);
             return (
-                <SearchResult book={singleBook} title={singleBook.volumeInfo.title} />
+                <SearchResult book={singleBook} title={singleBook.volumeInfo.title} author={singleBook.volumeInfo.authors} description={singleBook.searchInfo.textSnippet} />
             )
         })}
 

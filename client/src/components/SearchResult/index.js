@@ -18,10 +18,13 @@ function SearchResult(props) {
 
   return (  
     <div className="container">
+        <br></br>
         <h3 className="">{props.title}</h3>
-        <p className="lead"></p>
-        <p className="lead"></p>
+        <p className="">{props.author}</p>
+        <p className="">{props.description}</p>
         <button onClick={handleClick}>Save</button>
+        <br></br>
+        <br></br>
     </div>
     
   );
