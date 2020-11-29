@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
 
-function SearchResults() {
+function SavedBooks() {
   return (
     <div class="jumbotron jumbotron-fluid header-color">
     <div class="container ">
-        <h3 class="">Search Results</h3>
+        <h3 class="">Saved Books</h3>
         <p class="lead"></p>
     </div>
     </div>
   );
 }
 
-export default SearchResults;
+export default SavedBooks;

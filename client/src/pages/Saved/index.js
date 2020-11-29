@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 import Header from "../../components/Header/index.js";
+import SavedBooks from "../../components/SavedBooks/index.js";
 
 function Saved(props) {
   return (
     <div className="card">
     <Header />
-      <h1>Saved PAGE!</h1>
-
+    <SavedBooks />
     </div>
   
   );
